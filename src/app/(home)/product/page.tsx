@@ -1,4 +1,3 @@
-import MainProduct from "@/components/mainProduct";
 import {
   Carousel,
   CarouselContent,
