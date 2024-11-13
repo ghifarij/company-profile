@@ -62,6 +62,7 @@ export default async function Product() {
                         width={200}
                         height={200}
                         loading="lazy"
+                        className="hover:scale-110 transition-transform duration-300"
                       />
                       <div className="font-semibold line-clamp-2 w-full text-center pb-5">
                         {item.fields.title}
@@ -100,9 +101,11 @@ export default async function Product() {
                     <CardContent className="flex flex-wrap items-center justify-center h-[350px] p-4">
                       <Image
                         src={`https:${item.fields.thumbnail.fields.file.url}`}
-                        alt={"Biji Kopi"}
+                        alt={"Alat seduh"}
                         width={200}
                         height={200}
+                        loading="lazy"
+                        className="hover:scale-110 transition-transform duration-300"
                       />
                       <div className="font-semibold line-clamp-2 w-full text-center pb-5">
                         {item.fields.title}
@@ -141,9 +144,11 @@ export default async function Product() {
                     <CardContent className="flex flex-wrap items-center justify-center h-[350px] p-4">
                       <Image
                         src={`https:${item.fields.thumbnail.fields.file.url}`}
-                        alt={"Biji Kopi"}
+                        alt={"Perlengkapan"}
                         width={200}
                         height={200}
+                        loading="lazy"
+                        className="hover:scale-110 transition-transform duration-300"
                       />
                       <div className="font-semibold line-clamp-2 w-full text-center pb-5">
                         {item.fields.title}
