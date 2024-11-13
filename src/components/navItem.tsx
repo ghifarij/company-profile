@@ -83,10 +83,10 @@ export default function NavItem() {
               </div>
             </Link>
           </div>
-          <Link href={"/subscribe"}>
-            <div className="bg-[#6F4E37] text-white font-mono font-semibold ml-12 py-2 px-3 rounded-3xl hover:saturate-150 hover:shadow-xl">
+          <Link href={"/subscribe"} className="ml-12">
+            <button className="bg-[#6F4E37] text-white font-mono font-semibold py-2 px-3 rounded-3xl hover:saturate-150 hover:shadow-xl">
               Berlangganan
-            </div>
+            </button>
           </Link>
         </div>
       )}
