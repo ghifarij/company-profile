@@ -10,13 +10,7 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { BLOCKS } from "@contentful/rich-text-types";
 
-interface ProductDetailParams {
-  slug: string;
-}
-
-export const generateStaticParams = async (): Promise<
-  { params: ProductDetailParams }[]
-> => {
+export const generateStaticParams = async () => {
   const products: IProduct[] = await getProducts();
 
   return products.map((item) => ({
@@ -27,7 +21,7 @@ export const generateStaticParams = async (): Promise<
 export default async function ProductDetail({
   params,
 }: {
-  params: ProductDetailParams;
+  params: { slug: string };
 }) {
   const product: IProduct = await getProductSlug(params.slug);
 
@@ -38,6 +32,7 @@ export default async function ProductDetail({
       ),
     },
   };
+
   return (
     <div className="flex flex-col items-center mt-10 px-4 md:px-10 mb-28">
       <Link
