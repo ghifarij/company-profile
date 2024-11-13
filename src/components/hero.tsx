@@ -9,8 +9,9 @@ export default function Hero() {
         layout="fill"
         objectFit="cover"
         priority
+        className="hidden md:block"
       />
-      <div className="absolute mt-12 md:mt-28 text-white opacity-90">
+      <div className="absolute mt-12 md:mt-28 text-[#31511E] md:text-white opacity-90">
         <h1 className="font-extrabold text-center p-4 md:p-0 md:text-center text-5xl md:text-9xl font-playfair">
           TANAM KOPI
         </h1>
