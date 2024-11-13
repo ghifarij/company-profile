@@ -33,14 +33,6 @@ export default async function Product() {
 
   return (
     <section>
-      <div
-        id="product"
-        className="text-white bg-product bg-cover pb-12 pt-[20px] md:pt-20 lg:pb-[100px]"
-      >
-        <div className="w-full container mb-48">
-          <MainProduct />
-        </div>
-      </div>
       <div className="flex justify-center pt-20 mb-5">
         <h1 className="font-bold font-serif text-3xl">Biji Kopi</h1>
       </div>
