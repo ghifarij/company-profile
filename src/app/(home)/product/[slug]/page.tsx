@@ -10,19 +10,23 @@ import { FaArrowLeft } from "react-icons/fa6";
 import { MdOutlineShoppingBag } from "react-icons/md";
 import { BLOCKS } from "@contentful/rich-text-types";
 
-export const generateStaticParams = async () => {
+interface ProductDetailProps {
+  params: {
+    slug: string;
+  };
+}
+
+export const generateStaticParams = async (): Promise<
+  { params: { slug: string } }[]
+> => {
   const products: IProduct[] = await getProducts();
 
   return products.map((item) => ({
-    slug: item.fields.slug,
+    params: { slug: item.fields.slug },
   }));
 };
 
-export default async function ProductDetail({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default async function ProductDetail({ params }: ProductDetailProps) {
   const product: IProduct = await getProductSlug(params.slug);
 
   const options: Options = {
