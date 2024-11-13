@@ -16,9 +16,7 @@ interface ProductDetailProps {
   };
 }
 
-export const generateStaticParams = async (): Promise<
-  { params: { slug: string } }[]
-> => {
+export const generateStaticParams = async (): Promise<ProductDetailProps[]> => {
   const products: IProduct[] = await getProducts();
 
   return products.map((item) => ({
