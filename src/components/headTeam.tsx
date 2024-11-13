@@ -13,6 +13,7 @@ export default function HeadTeam() {
           src={"/head-marketing.jpg"}
           alt="Head of Marketing"
           className="hover:saturate-200"
+          priority
         />
         <div className="absolute bottom-5 w-full text-center">
           <div className="relative mx-5 overflow-hidden rounded-lg bg-white px-2 py-3 opacity-90">
@@ -28,6 +29,7 @@ export default function HeadTeam() {
           src={"/head-chef.jpg"}
           alt="Head Chef"
           className="hover:saturate-200"
+          priority
         />
         <div className="absolute bottom-5 w-full text-center">
           <div className="relative mx-5 overflow-hidden rounded-lg bg-white px-2 py-3 opacity-90">
@@ -45,6 +47,7 @@ export default function HeadTeam() {
           src={"/head-barista.jpg"}
           alt="Head Barista"
           className="hover:saturate-200"
+          priority
         />
         <div className="absolute bottom-5 w-full text-center">
           <div className="relative mx-5 overflow-hidden rounded-lg bg-white px-2 py-3 opacity-90">

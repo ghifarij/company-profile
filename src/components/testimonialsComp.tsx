@@ -32,6 +32,7 @@ export default function TestimonialsComp() {
                   height={128}
                   alt="Robert image"
                   className="w-32 h-32 rounded-full object-cover"
+                  loading="lazy"
                 />
                 <div className="text">
                   <p className="font-medium text-lg leading-8 text-gray-900 mb-2">
@@ -261,6 +262,7 @@ export default function TestimonialsComp() {
                   width={128}
                   height={128}
                   className="w-32 h-32 rounded-full object-cover"
+                  loading="lazy"
                 />
                 <div className="text">
                   <p className="font-medium text-lg leading-8 text-gray-900 mb-2">
@@ -490,6 +492,7 @@ export default function TestimonialsComp() {
                   width={128}
                   height={128}
                   className="w-32 h-32 rounded-full object-cover"
+                  loading="lazy"
                 />
                 <div className="text">
                   <p className="font-medium text-lg leading-8 text-gray-900 mb-2">
@@ -723,6 +726,7 @@ export default function TestimonialsComp() {
                   width={128}
                   height={128}
                   className="w-32 h-32 rounded-full object-cover"
+                  loading="lazy"
                 />
                 <div className="text">
                   <p className="font-medium text-lg leading-8 text-gray-900 mb-2">

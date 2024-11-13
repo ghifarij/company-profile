@@ -61,6 +61,7 @@ export default async function Product() {
                         alt={"Biji Kopi"}
                         width={200}
                         height={200}
+                        loading="lazy"
                       />
                       <div className="font-semibold line-clamp-2 w-full text-center pb-5">
                         {item.fields.title}

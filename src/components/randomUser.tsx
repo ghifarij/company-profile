@@ -90,6 +90,7 @@ const RandomUsers: React.FC = () => {
                       width={80}
                       height={80}
                       className="rounded-full border-4 border-white absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2"
+                      loading="lazy"
                     />
                   </CardHeader>
                   <CardContent className="p-6 pt-12 text-center">

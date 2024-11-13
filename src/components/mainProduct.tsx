@@ -17,6 +17,7 @@ export default function MainProduct() {
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
+                  priority
                 />
               </div>
               <div className="card__back absolute top-0 bottom-0 right-0 left-0 p-8 h-80 bg-[#EDE8DC] opacity-90 text-black rounded-lg content-center">
@@ -40,6 +41,7 @@ export default function MainProduct() {
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
+                  priority
                 />
               </div>
               <div className="card__back absolute top-0 bottom-0 right-0 left-0 p-8 h-80 bg-[#EDE8DC] opacity-90 text-black rounded-lg content-center">
@@ -63,6 +65,7 @@ export default function MainProduct() {
                   layout="fill"
                   objectFit="cover"
                   objectPosition="center"
+                  priority
                 />
               </div>
               <div className="card__back absolute top-0 bottom-0 right-0 left-0 p-8 h-80 bg-[#EDE8DC] opacity-90 text-black rounded-lg content-center">
