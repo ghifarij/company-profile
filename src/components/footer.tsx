@@ -12,13 +12,25 @@ export default function Footer() {
       <div className="flex flex-col flex-1 justify-end items-end">
         <p className="text-[#31511E] mb-1">Follow Tanam Kopi</p>
         <div className="flex gap-5">
-          <Link href={"https://www.facebook.com/"} target="_blank">
+          <Link
+            href={"https://www.facebook.com/"}
+            target="_blank"
+            aria-label="Follow Tanam Kopi on Facebook"
+          >
             <FaFacebook className="text-blue-700 text-xl md:text-3xl" />
           </Link>
-          <Link href={"https://www.instagram.com/"} target="_blank">
+          <Link
+            href={"https://www.instagram.com/"}
+            target="_blank"
+            aria-label="Follow Tanam Kopi on Instagram"
+          >
             <FaInstagram className="text-xl md:text-3xl text-[#e4405f]" />
           </Link>
-          <Link href={"https://x.com/"} target="_blank">
+          <Link
+            href={"https://x.com/"}
+            target="_blank"
+            aria-label="Follow Tanam Kopi on Twitter"
+          >
             <FaXTwitter className="text-xl md:text-3xl" />
           </Link>
         </div>

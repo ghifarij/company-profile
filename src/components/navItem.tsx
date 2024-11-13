@@ -26,7 +26,7 @@ export default function NavItem() {
   return (
     <div>
       {!isDesktop ? (
-        <DropdownMenu>
+        <DropdownMenu aria-label="Navigation Menu">
           <DropdownMenuTrigger className="mr-7">
             <IoMenu className="text-4xl" />
           </DropdownMenuTrigger>
@@ -84,7 +84,10 @@ export default function NavItem() {
             </Link>
           </div>
           <Link href={"/subscribe"} className="ml-12">
-            <button className="bg-[#6F4E37] text-white font-mono font-semibold py-2 px-3 rounded-3xl hover:saturate-150 hover:shadow-xl">
+            <button
+              className="bg-[#6F4E37] text-white font-mono font-semibold py-2 px-3 rounded-3xl hover:saturate-150 hover:shadow-xl"
+              aria-label="Subscribe to Tanam Kopi"
+            >
               Berlangganan
             </button>
           </Link>

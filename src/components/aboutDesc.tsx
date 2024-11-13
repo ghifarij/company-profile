@@ -6,7 +6,7 @@ export default function AboutDesc() {
         <h2 className="font-semibold mt-5 mb-1 font-serif">
           Menghadirkan Keaslian Kopi Nusantara ke Setiap Cangkir
         </h2>
-        <p>
+        <p className="text-base leading-relaxed mb-4">
           Didirikan dengan semangat untuk memperkenalkan kekayaan rasa kopi
           Nusantara kepada seluruh lapisan masyarakat, perusahaan kami lahir
           dari kecintaan mendalam terhadap biji kopi berkualitas. Berawal dari
@@ -19,7 +19,7 @@ export default function AboutDesc() {
         <h2 className="font-semibold mt-5 mb-1 font-serif">
           Kolaborasi dan Ketulusan: Nilai di Balik Setiap Butir Kopi
         </h2>
-        <p>
+        <p className="text-base leading-relaxed mb-4">
           Kami berpegang teguh pada budaya saling menghargai, transparansi, dan
           inovasi. Kami percaya bahwa setiap orang dalam tim kami adalah bagian
           dari perjalanan biji kopi ini, sehingga kami mendorong budaya kerja
