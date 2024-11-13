@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import {
   Card,
   CardHeader,
@@ -19,15 +19,23 @@ interface User {
   image: string;
   category: string;
 }
+interface ApiResponse {
+  results: Array<{
+    name: { first: string; last: string };
+    email: string;
+    phone: string;
+    picture: { large: string };
+  }>;
+}
 
 const RandomUsers: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
 
-  const fetchRandomUsers = async () => {
+  const fetchRandomUsers = useCallback(async () => {
     try {
       const response = await fetch("https://randomuser.me/api/?results=12");
-      const data = await response.json();
-      const fetchedUsers = data.results.map((user: any, index: number) => ({
+      const data: ApiResponse = await response.json();
+      const fetchedUsers = data.results.map((user, index) => ({
         name: `${user.name.first} ${user.name.last}`,
         email: user.email,
         phone: user.phone,
@@ -39,7 +47,7 @@ const RandomUsers: React.FC = () => {
     } catch (err) {
       console.log(err);
     }
-  };
+  }, []);
 
   const getCategory = (index: number): string => {
     const categories = ["Barista", "Kitchen", "Marketing"];
@@ -61,7 +69,7 @@ const RandomUsers: React.FC = () => {
     } else {
       fetchRandomUsers();
     }
-  }, []);
+  }, [fetchRandomUsers]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-foreground">
