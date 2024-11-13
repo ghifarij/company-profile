@@ -64,7 +64,9 @@ export default async function Product() {
                       </div>
                     </CardContent>
                     <div className="mx-auto bg-[#88C273] w-40 p-2 mb-4 rounded-xl text-center text-white hover:saturate-200">
-                      <Link href={"/"}>Lihat Detail Produk</Link>
+                      <Link href={`/product/${item.fields.slug}`}>
+                        Lihat Detail Produk
+                      </Link>
                     </div>
                   </Card>
                 </div>
@@ -107,7 +109,9 @@ export default async function Product() {
                       </div>
                     </CardContent>
                     <div className="mx-auto bg-[#88C273] w-40 p-2 mb-4 rounded-xl text-center text-white hover:saturate-200">
-                      <Link href={"/"}>Lihat Detail Produk</Link>
+                      <Link href={`/product/${item.fields.slug}`}>
+                        Lihat Detail Produk
+                      </Link>
                     </div>
                   </Card>
                 </div>
@@ -150,7 +154,9 @@ export default async function Product() {
                       </div>
                     </CardContent>
                     <div className="mx-auto bg-[#88C273] w-40 p-2 mb-4 rounded-xl text-center text-white hover:saturate-200">
-                      <Link href={"/"}>Lihat Detail Produk</Link>
+                      <Link href={`/product/${item.fields.slug}`}>
+                        Lihat Detail Produk
+                      </Link>
                     </div>
                   </Card>
                 </div>
