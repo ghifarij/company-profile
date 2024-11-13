@@ -11,6 +11,7 @@ import { getProducts } from "@/lib/product";
 import { IProduct } from "@/types/product";
 import Image from "next/image";
 import Link from "next/link";
+import TestimonialsProduct from "@/components/testimonialsProduct";
 
 export default async function Product() {
   const data: IProduct[] = await getProducts();
@@ -169,6 +170,7 @@ export default async function Product() {
           <CarouselNext />
         </Carousel>
       </div>
+      <TestimonialsProduct />
     </section>
   );
 }

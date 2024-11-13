@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { FaArrowUp, FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -9,17 +9,18 @@ export default function Footer() {
         @2024 Hak Cipta Terpelihara{" "}
         <span className="font-semibold">PT Tanam Kopi Indonesia</span>
       </div>
-      <div className="flex-1 md:flex justify-center hidden">
-        <Link href={"/"}>
-          <FaArrowUp className="text-2xl text-[#31511E]" />
-        </Link>
-      </div>
       <div className="flex flex-col flex-1 justify-end items-end">
         <p className="text-[#31511E] mb-1">Follow Tanam Kopi</p>
         <div className="flex gap-5">
-          <FaFacebook className="text-blue-700 text-xl md:text-3xl" />
-          <FaInstagram className="text-xl md:text-3xl" />
-          <FaXTwitter className="text-xl md:text-3xl" />
+          <Link href={"https://www.facebook.com/"} target="_blank">
+            <FaFacebook className="text-blue-700 text-xl md:text-3xl" />
+          </Link>
+          <Link href={"https://www.instagram.com/"} target="_blank">
+            <FaInstagram className="text-xl md:text-3xl text-[#e4405f]" />
+          </Link>
+          <Link href={"https://x.com/"} target="_blank">
+            <FaXTwitter className="text-xl md:text-3xl" />
+          </Link>
         </div>
       </div>
     </div>
