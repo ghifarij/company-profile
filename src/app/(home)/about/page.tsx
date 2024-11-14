@@ -145,8 +145,8 @@ export default function About() {
                   alt="Awal mula berdiri"
                   width={640}
                   height={360}
-                  priority
                   className="my-2"
+                  loading="lazy"
                 />
                 <p>
                   Meluaskan jangkauan Tanam Kopi dengan membuka cabang baru di
