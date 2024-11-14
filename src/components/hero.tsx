@@ -1,6 +1,15 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Hero() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="flex relative w-screen h-[20vh] md:h-[87vh] overflow-hidden justify-center max-w-full">
       <Image
@@ -11,7 +20,10 @@ export default function Hero() {
         priority
         className="hidden md:block"
       />
-      <div className="absolute mt-12 md:mt-28 text-[#31511E] md:text-white opacity-90">
+      <div
+        className="absolute mt-12 md:mt-28 text-[#31511E] md:text-white opacity-90"
+        data-aos="zoom-out"
+      >
         <h1 className="font-extrabold text-center p-4 md:p-0 md:text-center text-5xl md:text-9xl font-playfair">
           TANAM KOPI
         </h1>

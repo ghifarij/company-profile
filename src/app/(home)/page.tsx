@@ -5,6 +5,7 @@ import MainProduct from "@/components/mainProduct";
 import Link from "next/link";
 import TestimonialsComp from "@/components/testimonialsComp";
 import HeadTeam from "@/components/headTeam";
+import WhyChooseUs from "@/components/whyChooseUs";
 
 export default function Home() {
   return (
@@ -18,11 +19,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="about" className="relative z-10 pb-20 pt-[20px]">
-        <div className="container">
-          <HeadTeam />
-        </div>
-      </section>
+      <WhyChooseUs />
       <section
         id="product"
         className="text-white bg-product bg-cover pb-12 pt-20 lg:pb-[100px]"
@@ -37,6 +34,11 @@ export default function Home() {
           >
             TELUSURI PRODUK
           </Link>
+        </div>
+      </section>
+      <section id="about" className="relative z-10 pt-[20px] md:pt-20">
+        <div className="container">
+          <HeadTeam />
         </div>
       </section>
       <section id="testimonials" className="pb-20">

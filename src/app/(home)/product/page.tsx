@@ -55,7 +55,6 @@ export default async function Product() {
                         height={200}
                         className="hover:scale-110 transition-transform duration-300"
                         priority={index < 2}
-                        loading="lazy"
                       />
                       <div className="font-semibold line-clamp-2 w-full text-center pb-5">
                         {item.fields.title}

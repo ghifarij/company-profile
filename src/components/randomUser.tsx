@@ -11,6 +11,8 @@ import {
 import Image from "next/image";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 interface User {
   name: string;
@@ -71,13 +73,22 @@ const RandomUsers: React.FC = () => {
     }
   }, [fetchRandomUsers]);
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-foreground">
       <div className="w-[90%] pt-[20px] md:pt-20">
         {Object.entries(groupedUsers).map(([category, users]) => (
           <div key={category} className="mb-8">
-            <h2 className="text-2xl font-bold mb-4">{category}</h2>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-4">
+            <h2 className="text-2xl font-bold mb-4" data-aos="fade-right">
+              {category}
+            </h2>
+            <div
+              className="grid grid-cols-1 gap-4 md:grid-cols-4"
+              data-aos="fade-left"
+            >
               {users.map((user, index) => (
                 <Card
                   key={index}

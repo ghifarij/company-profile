@@ -33,6 +33,8 @@ export default async function ProductDetail({
     },
   };
 
+  const whatsappMessage = `Saya tertarik untuk membeli ${product.fields.category} "${product.fields.title}"`;
+
   return (
     <div className="flex flex-col items-center mt-10 px-4 md:px-10 mb-28">
       <Link
@@ -60,9 +62,16 @@ export default async function ProductDetail({
           <div className="mb-4">
             {documentToReactComponents(product.fields.description)}
           </div>
-          <button className="flex items-center gap-2 bg-[#88C273] text-white py-2 px-4 rounded-lg hover:saturate-200 transition duration-200">
+          <Link
+            href={`https://wa.me/+6281219996046?text=${encodeURIComponent(
+              whatsappMessage
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex w-40 items-center gap-2 bg-[#88C273] text-white py-2 px-4 rounded-lg hover:saturate-200 transition duration-200"
+          >
             <MdOutlineShoppingBag className="text-2xl" />+ Keranjang
-          </button>
+          </Link>
         </div>
       </div>
       <div className="w-full max-w-3xl mt-6">
